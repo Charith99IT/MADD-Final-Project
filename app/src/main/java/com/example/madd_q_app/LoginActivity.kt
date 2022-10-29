@@ -9,15 +9,15 @@ import com.google.firebase.database.FirebaseDatabase
 
 class LoginActivity : AppCompatActivity() {
 
-    private lateinit var RegisterText : TextView
+    private lateinit var registerText : TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        RegisterText = findViewById(R.id.RegisterText)
+        registerText = findViewById(R.id.RegisterText)
 
-        RegisterText.setOnClickListener {
+        registerText.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
         }
